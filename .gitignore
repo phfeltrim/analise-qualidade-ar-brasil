@@ -1,0 +1,6 @@
+*.pyc
+__pycache__/
+.venv/
+.vscode/
+01_dados_brutos/
+02_dados_processados/

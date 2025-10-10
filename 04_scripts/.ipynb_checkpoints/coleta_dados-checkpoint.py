@@ -1,0 +1,1 @@
+# Script para coletar dados das fontes (CETESB, IQAir, etc.)
