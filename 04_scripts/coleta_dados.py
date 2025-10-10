@@ -16,11 +16,8 @@ def coletar_dados_cetesb_api(datas: list, id_estacao: int, nome_estacao: str, pa
             data_inicio_api = data_obj.strftime('%Y-%m-%d')
             data_fim_obj = data_obj + timedelta(days=1)
             data_fim_api = data_fim_obj.strftime('%Y-%m-%d')
-            
-            # --- CORREÇÃO FINAL E DEFINITIVA ---
-            # O nome correto do campo é 'EstacaoID' (sem underscore)
+
             where_clause = f"EstacaoID = {id_estacao} AND data >= DATE '{data_inicio_api}' AND data < DATE '{data_fim_api}'"
-            # ------------------------------------
 
             params = { 'where': where_clause, 'outFields': '*', 'returnGeometry': 'false', 'f': 'json' }
             
@@ -71,7 +68,7 @@ if __name__ == "__main__":
     ]
     
     # --- ID CORRETO DA ESTAÇÃO ---
-    id_estacao_alvo = 83  # ID CORRETO para Pinheiros
+    id_estacao_alvo = 83
     nome_estacao_alvo = "Pinheiros"
     
     pasta_de_saida = os.path.join(os.path.dirname(__file__), '..', '01_dados_brutos')

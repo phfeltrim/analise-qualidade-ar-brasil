@@ -6,8 +6,7 @@ import time
 
 # --- CONFIGURAÇÕES ---
 
-# !! IMPORTANTE !! Cole aqui a sua chave da API que você obteve no site da IQAir
-API_KEY = "df4e1aa3-4c2d-4d68-bc2e-923c29c1960e" # Mantenha sua chave correta aqui
+API_KEY = "df4e1aa3-4c2d-4d68-bc2e-923c29c1960e" 
 
 # Cidade e estado que queremos pesquisar
 CIDADE = "Sao Paulo"
@@ -27,7 +26,6 @@ def coletar_dados_iqair_tempo_real(api_key, cidade, estado, pais):
     """
     print(f"Iniciando coleta de dados da IQAir para a cidade de {cidade}...")
     
-    # --- CORREÇÃO: Usando o endpoint correto para o plano gratuito ---
     url = "http://api.airvisual.com/v2/city"
     
     params = {

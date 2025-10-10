@@ -16,3 +16,4 @@ notebook
 # Para os scripts de coleta de dados (APIs e Web Scraping)
 requests
 selenium
+joblib
