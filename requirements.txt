@@ -1,4 +1,18 @@
+# Para manipulação e análise de dados
 pandas
-matplotlib
 openpyxl
-# Adicione outras bibliotecas aqui
+
+# Para visualização e gráficos
+matplotlib
+seaborn
+
+# Para Machine Learning
+scikit-learn
+xgboost
+
+# Para executar o ambiente de análise (Jupyter)
+notebook
+
+# Para os scripts de coleta de dados (APIs e Web Scraping)
+requests
+selenium
